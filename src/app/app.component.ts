@@ -6,15 +6,17 @@ import { Quote } from './quote.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
 export class AppComponent {
   title = 'app';
   quotes: Quote[] = [];
   newquote: Quote = new Quote();
 
-  onSubmit() {
+  onSubmit(quoteForm) {
     this.quotes.push(this.newquote);
     this.sortQuotes();
     this.newquote = new Quote();
+    quoteForm.reset();
   }
 
   rateQuote(eventData) {

@@ -1,7 +1,7 @@
 <h1>Add a Quote</h1>
 <div style="display: flex; justify-content: space-around;">
   <div style="width: 100%;">
-    <form style="display: flex; flex-direction: column; justify-content: space-between; align-items: flex-end;" (submit)="onSubmit()">
+    <form style="display: flex; flex-direction: column; justify-content: space-between; align-items: flex-end;" #quoteForm="ngForm" (submit)="onSubmit(quoteForm)">
       <textarea style="width: 100%; box-sizing: border-box;" name="text" [(ngModel)]="newquote.text" #text="ngModel" rows="3" required></textarea>
       <span style="float: right;">
         Author
