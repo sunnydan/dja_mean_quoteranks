@@ -1,5 +1,11 @@
 # Quoteranks
 
+Create an app which a user can use the form to create a quote with the author's name and list the quotes under the form as shown in the wireframe, if you complete this on time, move on to complete the bonus features: 
+
+BONUS: Each quote should include a rating value which by default starts at 0. Allow the user to increase and decrease ratings for each quote. 
+
+BONUS: sort the quotes by highest to lowest ratings.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.7.
 
 ## Development server

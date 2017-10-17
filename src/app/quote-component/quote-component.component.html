@@ -1,0 +1,13 @@
+<div style="padding: 5px; margin: 5px; border: solid black 1px; display: flex; justify-content: space-between;">
+  <p>
+    {{ quote.text }}
+  </p>
+  <div style="display: flex; justify-content: space-between;">
+    <h3 style="width: 50px; text-align: center;">{{ quote.score }}</h3>
+    <div style="display: flex; flex-direction: column; justify-content: space-between;">
+      <button (click)="triggerVote(true)" style="background-color: green;">Vote Up</button>
+      <button (click)="triggerVote(false)" style="background-color: red;">Vote Down</button>
+      <button (click)="triggerDelete()" style="background-color: black; color: white;">Delete</button>
+    </div>
+  </div>
+</div>
